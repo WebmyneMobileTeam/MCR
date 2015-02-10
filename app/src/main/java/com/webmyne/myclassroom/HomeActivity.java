@@ -55,20 +55,20 @@ public class HomeActivity extends ActionBarActivity {
     private void fillPrograms() {
 
         TVProgram program1 = new TVProgram();
-        program1.start_time = "09-02-2015 11:00 AM";
-        program1.end_time = "09-02-2015 11:03 AM";
+        program1.start_time = "10-02-2015 11:00 AM";
+        program1.end_time = "10-02-2015 11:03 AM";
         program1.name = "Pirates of the caribbean";
         program1.url = MYURL1;
 
         TVProgram program2 = new TVProgram();
-        program2.start_time = "09-02-2015 11:03 AM";
-        program2.end_time = "09-02-2015 11:06 AM";
+        program2.start_time = "10-02-2015 11:03 AM";
+        program2.end_time = "10-02-2015 11:06 AM";
         program2.name = "Avengers";
         program2.url = MYURL2;
 
         TVProgram program3 = new TVProgram();
-        program3.start_time = "09-02-2015 11:06 AM";
-        program3.end_time = "09-02-2015 11:09 AM";
+        program3.start_time = "10-02-2015 11:06 AM";
+        program3.end_time = "10-02-2015 11:09 AM";
         program3.name = "Knowing";
         program3.url = MYURL3;
 
@@ -109,8 +109,7 @@ public class HomeActivity extends ActionBarActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if(position == 0){
-                    Intent i = new Intent(HomeActivity.this,MyPlayerActivity.class);
-                    startActivity(i);
+
                 }
             }
         });

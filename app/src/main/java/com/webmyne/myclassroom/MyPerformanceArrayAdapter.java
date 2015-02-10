@@ -78,14 +78,11 @@ public class MyPerformanceArrayAdapter extends BaseAdapter {
             }else{
                 holder.image.setVisibility(View.GONE);
             }
-            
-            
-            
+
         }catch(ParseException e){
             e.printStackTrace();
         }
       
-        
         
         
 

@@ -15,16 +15,15 @@ public class Launcher extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_launcher);
 
-        new CountDownTimer(2500, 1000) {
-
+        new CountDownTimer(500, 1000) {
+            
             @Override
             public void onFinish() {
 
                 Intent i = new Intent(Launcher.this,LoginActivity.class);
                 startActivity(i);
                 finish();
-
-
+                
             }
 
             @Override
