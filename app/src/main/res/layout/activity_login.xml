@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:padding="8dp"
+    android:background="@color/primaryColor"
+    tools:context="com.webmyne.myclassroom.LoginActivity">
+
+    <TextView
+        android:layout_gravity="left|center_vertical"
+        android:padding="16dp"
+        android:background="#fff"
+        android:gravity="center"
+        android:text="App\nLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primaryColor"
+        android:textSize="12sp" />
+
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textSize="22sp"
+            android:gravity="left"
+            android:textColor="#494949"
+            android:padding="16dp" />
+
+        <EditText
+            android:layout_marginTop="1dp"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textSize="22sp"
+            android:gravity="left"
+            android:textColor="#494949"
+            android:padding="16dp" />
+
+
+        <ImageView
+            android:id="@+id/imgNext"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="#fff"
+            android:src="@drawable/ic_navigation_arrow_forward"
+            android:scaleType="centerInside" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
