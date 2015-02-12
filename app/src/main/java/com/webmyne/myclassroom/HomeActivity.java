@@ -20,8 +20,8 @@ public class HomeActivity extends ActionBarActivity {
     private ArrayList<TVProgram> programs;
     public static ArrayList<TVProgram> currentPrograms;
     private ListView lvPrograms;
-    public static final String TIME_SERVER = "time-a.nist.gov";
-    public static Date currentTime;
+
+     private Date currentTime;
     public static String MYURL1 = "http://ws-srv-net.in.webmyne.com/Applications/VideoLibrary/one.3gp";
     public static String MYURL2 = "http://ws-srv-net.in.webmyne.com/Applications/VideoLibrary/two.3gp";
     public static String MYURL3 = "http://ws-srv-net.in.webmyne.com/Applications/VideoLibrary/three.3gp";
@@ -87,7 +87,9 @@ public class HomeActivity extends ActionBarActivity {
             e.printStackTrace();
         }
         
-        lvPrograms.setAdapter(new MyPerformanceArrayAdapter(HomeActivity.this,currentPrograms,currentTime));
+        MyPerformanceArrayAdapter adapter = new MyPerformanceArrayAdapter(HomeActivity.this,currentPrograms,currentTime);
+        lvPrograms.setAdapter(adapter);
+        adapter.notifyDataSetChanged();
         lvPrograms.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

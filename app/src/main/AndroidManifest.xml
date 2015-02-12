@@ -40,13 +40,6 @@
             android:label="@string/title_activity_play_video" >
         </activity>
 
-        <activity
-            android:screenOrientation="sensorLandscape"
-            android:name=".VideoPlayerActivity"
-            android:label="@string/title_activity_play_video" >
-        </activity>
-
-     
 
     </application>
 
